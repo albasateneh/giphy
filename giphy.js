@@ -1,4 +1,4 @@
-var topics = ["house stark", "jon snow", "lanister", "aria stark", "hold the door", "hodor", "tyrion", "khal drogo", "white walker", "dracarys"];
+var topics = ["house stark", "jon snow", "hodor", "tyrion", "khal drogo", "white walker", "dracarys"];
 
 function renderButtons() {
     $("#view").empty();
@@ -7,7 +7,7 @@ function renderButtons() {
 
     for (var i = 0; i < topics.length; i++) {
         var buttons = $("<button>");
-        buttons.addClass("topic");
+        buttons.addClass("topic btn btn-dark");
         buttons.attr("data-name", topics[i]);
         buttons.text(topics[i]);
         $("#view").append(buttons);

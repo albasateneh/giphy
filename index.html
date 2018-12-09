@@ -4,22 +4,22 @@
 <head>
     <meta charset="utf-8">
     <title>Giphy</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
-    
-    <form id="movie-form">
-      <label for="movie-input">Add a Game of Thrones Character</label>
+    <div class = "container-fluid">
+   
+    <form id="giphy-form">
+      <label id = "text" for="char-input">Search Game of Thrones!!!</label>
       <input type="text" id="gif-input">
-      <br>
-
-      <!-- Button triggers new movie to be added -->
-      <input id="add-gif" type="submit" value="Click Me">
+      <input class = "btn btn-dark" id="add-gif" type="submit" value="Click Me">
     </form>
     
         <div id="view"></div>
      <div id="images-here"></div>
-
+</div>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src = "giphy.js">
